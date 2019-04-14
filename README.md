@@ -11,5 +11,4 @@ difficulty level.
 
 ![img](/Hw8/Screenshot/hard.png?raw=true "hard")
 
-Start game with normal difficulty
 ![img](/Hw8/Screenshot/easy.png?raw=true "easy")
