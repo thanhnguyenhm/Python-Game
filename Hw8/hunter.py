@@ -111,7 +111,7 @@ class Game:
 
         # add game name
         name = tkinter.Label(info_frame, text='Scooter Hunter',
-                fg='steel blue', width=18)
+                             fg='steel blue', width=18)
         name.config(font=('Helvetica', 48, 'bold'))
         name.grid(column=1, row=0)
 
@@ -139,16 +139,17 @@ class Game:
         self.canvas.grid()
 
         instruction = (f'Starting a {self.level} level game... Use four'
-              f' arrow keys to move. Try to capture all {self.num_scooter}'
-              f' scooters while avoiding {self.num_student} students'
-              f' walking around the campus.')
+                       f' arrow keys to move. Try to capture all '
+                       f'{self.num_scooter}'
+                       f' scooters while avoiding {self.num_student} students'
+                       f' walking around the campus.')
 
         # make a label widget to display rules
         rule = tkinter.Label(parent, text=instruction, height=2)
 
         self.gate = self.canvas.create_rectangle(self.gate_x0, self.gate_y0,
-                                     self.gate_x1, self.gate_y1,
-                                    fill='steel blue')
+                                                 self.gate_x1, self.gate_y1,
+                                                 fill='steel blue')
 
         rule.grid()
         self.start()
@@ -182,11 +183,11 @@ class Game:
         player_coor = self.canvas.coords(self.player)
         for i in self.student_list:
             if (abs(self.canvas.coords(i)[0] - player_coor[0]) <= 15
-            and abs(self.canvas.coords(i)[1] - player_coor[1]) <= 30):
+                    and abs(self.canvas.coords(i)[1] - player_coor[1]) <= 30):
                 self.go = False
                 self.result = self.canvas.create_text(500, 300,
-                    text=f'GAME OVER!\nYOUR SCORE: {self.score}\n'
-                    'CLICK NEW GAME TO RESTART', fill='Red')
+                            text=f'GAME OVER!\nYOUR SCORE: {self.score}\n'
+                          'CLICK NEW GAME TO RESTART', fill='Red')
                 return
         for j in self.scooter_list:
             if (abs(self.canvas.coords(j)[0] - player_coor[0]) <= 30
@@ -198,8 +199,8 @@ class Game:
         if not self.scooter_list:
             self.go = False
             self.result = self.canvas.create_text(500, 300,
-                    text=f'YOU WON!\nYOUR SCORE: {self.score}\n'
-                    'CLICK NEW GAME TO RESTART', fill='Blue')
+                          text=f'YOU WON!\nYOUR SCORE: {self.score}\n'
+                          'CLICK NEW GAME TO RESTART', fill='Blue')
 
     def left(self, event):
         if self.go:
@@ -232,7 +233,7 @@ class Game:
             x = random.randint(50, self.CANVAS_WIDTH - 50)
             y = random.randint(50, self.CANVAS_HEIGHT - 50)
             self.scooter_list.append(self.canvas.create_image(x, y,
-                                    image=self.scooter_image))
+                                      image=self.scooter_image))
 
     def create_students(self, num):
         self.student_image = tkinter.PhotoImage(file='student.gif')
@@ -262,7 +263,7 @@ class Game:
             if y <= 0:
                 self.y_pixel[s] = abs(pix)
             if ((self.gate_x0 < x + 20 < self.gate_x1) and
-                (self.gate_y0 < y + 20 < self.gate_y1)):
+                    (self.gate_y0 < y + 20 < self.gate_y1)):
                 self.x_pixel[s] = -abs(pix)
                 self.y_pixel[s] = -abs(pix)
             self.canvas.move(s, self.x_pixel[s], self.y_pixel[s])
