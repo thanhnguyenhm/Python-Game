@@ -2,7 +2,7 @@
 # Name:        Scooter Hunter
 # Purpose:     Game Scooter Hunter implementation with tkinter
 #
-# Author:      foobar
+# Author:      Thanh Nguyen
 # ----------------------------------------------------------------------
 """
 Implement a GUI game with animation in tkinter.
