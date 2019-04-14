@@ -1,6 +1,6 @@
 ### A Python game with animation using Tkinter
 
-School Project for Advanced Python course
+Homework Assignment for a Python class
 
 Number of scooters, obstacles and speed can be modified, depend on 
 difficulty level.
