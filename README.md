@@ -7,9 +7,9 @@ difficulty level.
 
 -------------------
 
-![img](/HW8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "normal")
+![img](/Hw8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "normal")
 
-![img](/HW8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "hard")
+![img](/Hw8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "hard")
 
 Start game with normal difficulty
-![img](/HW8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "easy")
+![img](/Hw8/Screenshot/Screen Shot 2019-04-13 at 1.52.26 PM.png?raw=true "easy")
