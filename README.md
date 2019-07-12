@@ -1,6 +1,6 @@
 ### A Python game with animation using Tkinter
 
-Homework Assignment for a Python class
+Individual Homework Assignment for a Python class
 
 Number of scooters, obstacles and speed can be modified, depend on 
 difficulty level.
